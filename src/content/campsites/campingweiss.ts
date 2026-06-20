@@ -3,61 +3,62 @@ import type { CampsiteConfig } from "../types";
 const IMG = "/campsites/campingweiss";
 
 const campingweiss: CampsiteConfig = {
-  name: "Camping Weiss",
+  name: "Camping Weiss am Bodensee",
   shortName: "Weiss",
   slug: "campingweiss",
-  ort: "Bregenz am Bodensee",
+  ort: "Bregenz",
   region: "Vorarlberg",
-  brandKind: "Camping & Bauernhof",
-  regionLong: "Bodenseeregion · Bregenz · Vorarlberg · Österreich",
+  brandKind: "Camping",
+  // KEIN see-Feld: der Platz liegt fünf Gehminuten vom Bodensee, nicht direkt am Ufer (near ≠ on).
+  regionLong: "Bodensee · Bregenz · Vorarlberg · Österreich",
 
   heroVariant: "center",
 
-  claim: "Ruhig campen am Rande des Bodensees",
+  claim: "Seit 1965 dein Zuhause am Rande des Bodensees",
   claimEmphasis: "am Rande des Bodensees",
-  emailDetail: "euer eigener Bauernhof direkt am Campingplatz",
+  emailDetail: "euer eigener Bauernhof mit Tieren direkt am Platz",
   intro:
-    "Auf dem Hof der Familie Weiss campst du seit 1965 mitten im Grünen und doch nah an Bregenz — fünf Gehminuten zum Bodensee, Tiere zum Anfassen und im s'Annele Most und Schnaps aus eigener Ernte.",
+    "Ein traditionsreicher Familienplatz am Rande des Bodensees: ebene Stellplätze, ein eigener Bauernhof mit Tieren und das Stüble s’Annele mit Most und Schnaps vom eigenen Hof — und in fünf Gehminuten stehst du am Seeufer.",
 
-  logo: { src: `${IMG}/logo-d501aa06b8.png`, alt: "Camping Weiss Logo" },
+  logo: { src: `${IMG}/logo.png`, alt: "Camping Weiss Logo" },
 
   statement: {
-    text: "Fünf Gehminuten hinter deinem Vorzelt beginnt der Bodensee — dazwischen nur Wiese, Hof und Ruhe.",
-    emphasis: "der Bodensee",
+    text: "Seit 1965 führt unsere Familie den Platz — mit eigenem Hof, eigenem Stüble und dem Bodensee gleich um die Ecke.",
+    emphasis: "Seit 1965",
   },
 
   pillars: [
     {
-      title: "Seit 1965 am Bodensee",
-      text: "Seit fast 60 Jahren führt die Familie Weiss den Platz am Rande des Bodensees mit viel Herz.",
-      image: { src: `${IMG}/hero-71ef6fe59b.webp`, alt: "Historische Luftaufnahme von Camping Weiss am Bodensee" },
-    },
-    {
-      title: "s'Annele – unsere Gaststube",
-      text: "In der gemütlichen Gaststube gibt es Most, Schnaps und Essig aus der eigenen Landwirtschaft.",
-      image: { src: `${IMG}/amenity-e278707f2f.webp`, alt: "Gemütliche Gaststube s'Annele bei Camping Weiss" },
+      title: "Tradition seit 1965",
+      text: "Schon 1965 begrüßte unsere Familie hier die ersten Gäste — die Lage am Bodensee ist geblieben.",
+      image: { src: `${IMG}/pillar-tradition.webp`, alt: "Historische Luftaufnahme von Camping Weiss am Bodensee" },
     },
     {
       title: "Persönlich empfangen",
-      text: "An der Anmeldung kennt man sich noch — hier wirst du herzlich und ganz familiär begrüßt.",
-      image: { src: `${IMG}/amenity-54a5c84e67.webp`, alt: "Anmeldung und Empfang am Camping Weiss" },
+      text: "An unserer Anmeldung wirst du persönlich begrüßt — familiär geführt wie schon vor Jahrzehnten.",
+      image: { src: `${IMG}/pillar-empfang.webp`, alt: "Anmeldung und Empfang von Camping Weiss" },
+    },
+    {
+      title: "Bodensee & Pfänder",
+      text: "Fünf Gehminuten zum Seeufer und der Pfänder als Hausberg — Natur liegt direkt vorm Vorzelt.",
+      image: { src: `${IMG}/pillar-pfaender.webp`, alt: "Blick vom Pfänder über Bregenz und den Bodensee" },
     },
   ],
 
   usps: [
-    "Seit 1965 in Familienhand",
+    "Seit 1965 familiengeführt",
+    "Eigener Bauernhof mit Tieren",
+    "Stüble mit Hofprodukten",
+    "Warmwasser & Strom inklusive",
     "5 Gehminuten zum Bodensee",
-    "Eigener Bauernhof",
-    "Strom & Warmwasser gratis",
-    "Hunde gratis willkommen",
-    "Most & Schnaps vom Hof",
+    "Hunde willkommen",
   ],
 
   trust: {
-    heading: "Warum Gäste seit 1965 wiederkommen",
-    headingEmphasis: "seit 1965",
+    heading: "Bald 60 Jahre Gastfreundschaft am See",
+    headingEmphasis: "60 Jahre",
     intro:
-      "Ein Platz am Rande des Bodensees, geführt von der Familie Weiss: ruhige Wiesen statt Partytrubel, ein eigener Bauernhof für die Kinder und das s'Annele mit Most aus eigener Landwirtschaft.",
+      "Was 1965 begann, führen wir bis heute mit Herz: ein ruhiger, gepflegter Platz, kurze Wege zum Bodensee und in die Bregenzer Altstadt, freier Strom und gratis Warmwasser — und Tiere, über die sich deine Kinder freuen.",
   },
 
   awards: [],
@@ -65,26 +66,28 @@ const campingweiss: CampsiteConfig = {
   saison: { von: "März", bis: "Oktober" },
 
   hero: {
-    aerial: {
-      src: `${IMG}/amenity-a44a3c1440.webp`,
-      alt: "Gastgarten und Stellplätze von Camping Weiss am Rande des Bodensees",
-    },
+    aerial: { src: `${IMG}/hero.webp`, alt: "Gastgarten und Campingplatz von Camping Weiss am Bodensee" },
   },
 
   camping: {
-    heading: "Einkehren im s'Annele",
+    heading: "Der Platz und sein Stüble",
     intro:
-      "Unsere Gaststube mit Gastgarten — benannt nach Gründerin Anna Weiss — verwöhnt dich mit kleinen Köstlichkeiten und Hausgemachtem vom eigenen Hof.",
+      "Ein familiärer Platz von März bis Oktober mit ebenen Stellplätzen, zwei modernen Sanitärhäusern und gratis Warmwasser — mittendrin das Stüble s’Annele mit Hofprodukten.",
     features: [
       {
-        title: "Selbstbedienung im Stüble",
-        text: "Im Campingstüble holst du dir Pizza, Wienerle oder Wurstsalat ganz unkompliziert selbst.",
-        image: { src: `${IMG}/amenity-38724143a2.webp`, alt: "Rustikale Gaststube s'Annele mit Selbstbedienung" },
+        title: "Gaststube s’Annele",
+        text: "In gemütlicher Selbstbedienungs-Stube genießt du kalte und warme Snacks sowie kühle Getränke.",
+        image: { src: `${IMG}/stueble.webp`, alt: "Gaststube s’Annele am Campingplatz Weiss" },
       },
       {
-        title: "Gedeckt für gesellige Abende",
-        text: "An liebevoll gedeckten Tischen lässt du den Tag am See oder in Bregenz ausklingen.",
-        image: { src: `${IMG}/amenity-f109641a70.webp`, alt: "Festlich gedeckter Tisch im s'Annele" },
+        title: "Most & Schnaps vom Hof",
+        text: "An der Theke gibt es Most, Schnaps und Mostessig aus unserer eigenen Landwirtschaft.",
+        image: { src: `${IMG}/theke.webp`, alt: "Theke im Stüble mit hofeigenen Produkten" },
+      },
+      {
+        title: "Lauschiger Gastgarten",
+        text: "Im überdachten Gastgarten lässt du den Tag am See bei einem kühlen Bier ausklingen.",
+        image: { src: `${IMG}/gastgarten.webp`, alt: "Überdachter Gastgarten beim Stüble s’Annele" },
       },
     ],
   },
@@ -92,46 +95,36 @@ const campingweiss: CampsiteConfig = {
   anreise: {
     heading: "Anreise nach Bregenz",
     modes: [
-      {
-        title: "Mit dem Auto",
-        text: "Über die A14 bis Bregenz, dann Richtung Bodenseeufer zum Brachsenweg — geparkt wird direkt am Platz.",
-      },
-      {
-        title: "Mit Bus & Bahn",
-        text: "Der Bahnhof Bregenz liegt rund 3 km entfernt, die Bushaltestelle direkt am Campingplatz.",
-      },
-      {
-        title: "Zu Fuß zum See",
-        text: "In nur fünf Gehminuten stehst du am Ufer des Bodensees und an der Liegewiese.",
-      },
+      { title: "Mit dem Auto", text: "Über die A14 bis Bregenz, dann Richtung Seeufer zum Brachsenweg — Parken direkt am Platz." },
+      { title: "Mit Bahn & Bus", text: "Bahnhof Bregenz, von dort wenige Minuten zum Platz — die Bushaltestelle liegt direkt am Campingplatz." },
+      { title: "Mit dem Rad", text: "Der Bodensee-Radweg führt nahe am Platz vorbei — Bregenz und Lindau erreichst du bequem mit dem Rad." },
     ],
   },
 
   galerie: {
-    heading: "Platz, Stüble und Umgebung",
-    headingEmphasis: "Stüble",
-    intro: "Ein paar Eindrücke von unserem s'Annele, dem Platz und der Aussicht rundum.",
+    heading: "Camping Weiss in Bildern",
+    headingEmphasis: "in Bildern",
+    intro: "Vom Stüble bis zum Hofeingang — ein paar Eindrücke von unserem Platz am Rande des Bodensees.",
     tag: "März bis Oktober",
     images: [
-      { src: `${IMG}/amenity-dc0658945e.webp`, alt: "Theke im s'Annele mit hausgemachten Getränken" },
-      { src: `${IMG}/amenity-85f01564c6.webp`, alt: "Überdachter Gastgarten von Camping Weiss mit Bierbänken und Maisverzierung" },
-      { src: `${IMG}/gallery-c7f4fc2218.webp`, alt: "Blick vom Pfänder über Bregenz und den Bodensee" },
+      { src: `${IMG}/galerie-stube.webp`, alt: "Gemütliche Stube im s’Annele" },
+      { src: `${IMG}/galerie-tafel.webp`, alt: "Festlich gedeckter Tisch im s'Annele" },
+      { src: `${IMG}/galerie-hof.webp`, alt: "Rustikaler Hofeingang mit altem Wagenrad" },
+      { src: `${IMG}/galerie-sanitaer.webp`, alt: "Modernes Sanitärgebäude am Campingplatz Weiss" },
     ],
   },
 
   booking: {
-    heading: "Sichere dir deinen Platz am Bodensee",
+    heading: "Lust auf Urlaub am Bodensee?",
     headingEmphasis: "am Bodensee",
-    intro: "Sag uns Zeitraum und Stellplatz — Camping Weiss meldet sich persönlich mit der Verfügbarkeit.",
+    intro:
+      "Reservierungen nehmen wir telefonisch entgegen — ruf uns an oder schreib uns eine Mail, wir melden uns mit deiner Verfügbarkeit.",
     pricesArePlaceholder: false,
     priceNote:
-      "Richtpreise: 2 Erwachsene (je € 13) + Stellplatz · Kinder 5–14 € 8 · Strom & Warmwasser inklusive · zzgl. Ortstaxe — bitte bestätigen.",
-    highlight: {
-      title: "Alles inklusive",
-      text: "Warmwasser, Duschen und Strom kosten bei Camping Weiss nichts extra — auch dein Hund ist gratis dabei.",
-    },
+      "Richtpreise für 2 Erwachsene (je € 13) inkl. Stellplatz · zzgl. € 5 Ortstaxe je Erwachsener/Nacht · Kinder 5–14 J. € 8 · Warmwasser, Strom & Hund kostenlos · Stand 2026",
+    highlight: { title: "Alles inklusive", text: "Warmwasser, Dusche, Strom und dein Hund sind bei uns kostenlos." },
     categories: [
-      { id: "stellplatz", label: "Zelt / Auto / Wohnwagen", perNight: 38, perExtraGuest: 13 },
+      { id: "stellplatz", label: "Zelt / Wohnwagen", perNight: 38, perExtraGuest: 13 },
       { id: "wohnmobil8", label: "Wohnmobil bis 8 m", perNight: 45, perExtraGuest: 13 },
       { id: "wohnmobilxl", label: "Wohnmobil ab 8 m", perNight: 47, perExtraGuest: 13 },
     ],
@@ -148,16 +141,12 @@ const campingweiss: CampsiteConfig = {
   languages: ["DE", "EN"],
 
   nav: [
-    { label: "s'Annele", href: "#camping" },
-    { label: "Galerie", href: "#galerie" },
-    {
-      label: "Preise & Lage",
-      href: "#booking",
-      children: [
-        { label: "Preise", href: "#booking" },
-        { label: "Anreise", href: "#anreise" },
-      ],
-    },
+    { label: "Der Platz", href: "#camping", children: [
+      { label: "Stüble s’Annele", href: "#camping" },
+      { label: "Galerie", href: "#galerie" },
+    ]},
+    { label: "Preise", href: "#booking" },
+    { label: "Anreise", href: "#anreise" },
     { label: "Kontakt", href: "#kontakt" },
   ],
 };
