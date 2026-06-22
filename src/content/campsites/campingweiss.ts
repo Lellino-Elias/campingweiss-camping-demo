@@ -77,7 +77,7 @@ const campingweiss: CampsiteConfig = {
       {
         title: "Gaststube s’Annele",
         text: "In gemütlicher Selbstbedienungs-Stube genießt du kalte und warme Snacks sowie kühle Getränke.",
-        image: { src: `${IMG}/stueble.webp`, alt: "Gaststube s’Annele am Campingplatz Weiss" },
+        image: { src: `${IMG}/stueble.webp`, alt: "Gemütliche Sitzecke in der Gaststube s’Annele" },
       },
       {
         title: "Most & Schnaps vom Hof",
@@ -107,10 +107,10 @@ const campingweiss: CampsiteConfig = {
     intro: "Vom Stüble bis zum Hofeingang — ein paar Eindrücke von unserem Platz am Rande des Bodensees.",
     tag: "März bis Oktober",
     images: [
-      { src: `${IMG}/galerie-stube.webp`, alt: "Gemütliche Stube im s’Annele" },
+      { src: `${IMG}/galerie-stube.webp`, alt: "Gastraum des Stüble s’Annele mit Holztischen und rustikalem Ambiente" },
       { src: `${IMG}/galerie-tafel.webp`, alt: "Festlich gedeckter Tisch im s'Annele" },
       { src: `${IMG}/galerie-hof.webp`, alt: "Rustikaler Hofeingang mit altem Wagenrad" },
-      { src: `${IMG}/galerie-sanitaer.webp`, alt: "Modernes Sanitärgebäude am Campingplatz Weiss" },
+      { src: `${IMG}/galerie-sanitaer.webp`, alt: "Kind streichelt Zicklein am Bauernhof von Camping Weiss" },
     ],
   },
 
